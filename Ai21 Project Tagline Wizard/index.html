@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tagline Generator</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpeg" type="image/x-icon">
+</head>
+<body>
+  <header class="header">
+  <div class="header__logo-container">
+    <img src="logo.jpeg" alt="Logo" class="header__logo">
+      <h1 class="header__title">Tagline Wizard</h1>
+  </div>
+</header>
+  <main class="main">
+    <div class="container">
+      <div class="instructions">
+        <h2 class="instructions__title">How to Use:</h2>
+        <ol class="instructions__list">
+          <li class="instructions__item">Enter your business type in the input field below.</li>
+          <li class="instructions__item">Click the "Generate" button to generate tagline ideas.</li>
+          <li class="instructions__item">Explore the generated taglines and find the ones that resonate with your business.</li>
+          <li class="instructions__item">To save a tagline, simply click on it. The saved taglines will appear in the "Saved Taglines" section below.</li>
+            <li class="instructions__item">You have the option to continually generate new taglines and save them in the "Saved" section for future reference, allowing you to choose the best tagline at a later time.</li>
+          <li class="instructions__item">You can delete a saved tagline by clicking the delete button next to it.</li>
+        </ol>
+      </div>
+      <div class="generator">
+        <h2 class="generator__title">Generate Taglines</h2>
+        <div class="input-container">
+          <label for="business-name" class="input-label">Enter your business Type:</label>
+          <input type="text" id="business-name" class="input-field" placeholder="Business Type Eg. Milk Shop">
+        </div>
+        <button id="generate-button" class="generate-button">Generate</button>
+        <p id="loading-message" class="loading-message">Please wait...</p>
+      </div>
+      <div id="taglines-container" class="taglines-container"></div>
+      <div id="saved-taglines-container" class="saved-taglines-container">
+        <h2 class="saved-taglines__title">Saved Taglines</h2>
+        <p id="no-taglines-message" class="no-taglines-message">No taglines saved.</p>
+        <ul id="saved-taglines-list" class="saved-taglines-list"></ul>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>Tagline Generator &copy; 2023 | Made with ❤️ for You</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
